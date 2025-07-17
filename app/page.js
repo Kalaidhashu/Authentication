@@ -11,7 +11,7 @@ export default function Home() {
     <>
     <div className={styles.page}>
     <div className="logout">
-    <p>You are signed out as {session.user.email}</p>
+    <p>You are signed as {session.user.email}</p>
     <img src={session.user.image}></img>
     <button onClick={()=>signOut()}>Logout</button>
     </div>
@@ -22,10 +22,10 @@ export default function Home() {
   return (
     <>
     <div className={styles.page}>
-    <form className="form">
+    <div className="form">
     <p>Login Here </p>
     <button onClick={()=>signIn()} className="btn">Login</button>
-    </form>
+    </div>
     </div>
     </>
   );
